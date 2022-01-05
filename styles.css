@@ -1,0 +1,43 @@
+:root {
+    --grid-dim: 1;
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#clear {
+    font-size: 20px;
+    background-color: slategray;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin-right: 12px;
+
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-dim), 1fr);
+    grid-template-columns: repeat(var(--grid-dim), 1fr);
+    width: 840px;
+    height: 840px;
+    background-color: rgb(78, 78, 78);
+}
+
+.grid-item {
+    border: .5px solid rgba(221, 221, 221, 0.425);
+    text-align: center;
+  }
+
+.drawn {
+    background-color: white;
+}
